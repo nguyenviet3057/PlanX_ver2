@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <title>Home Page</title>
+</head>
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <button id="login">Login</button>
+        <button id="register">Register</button>
+    </div>
+    <div id="screen">
+        <div id="panel">
+            <div class="reference" id="home_r">
+                <div id="home"></div>
+                <div class="panel_text">Home</div>
+                <div class="ref_bg" id="h_r"></div>
+            </div>
+            <div class="reference" id="info_r">
+                <div id="get_info"></div>
+                <div class="panel_text">Information</div>
+                <div class="ref_bg" id="i_r"></div>
+            </div>
+            <div class="reference" id="contact_r">
+                <div id="contact"></div>
+                <div class="panel_text">Contact</div>
+                <div class="ref_bg" id="c_r"></div>
+            </div>
+            <div class="reference" id="support_r">
+                <div id="support"></div>
+                <div class="panel_text" id="s_t">Support</div>
+                <div class="ref_bg" id="s_r"></div>
+            </div>
+        </div>
+        <div id="information">
+            <div id="bg"></div>
+            <div id="home_p">
+                <div id="welcome">
+                    <h1 id="h1">Welcome to PlanX</h1>
+                    <h2 id="h2">This web app is for making your own website to "flirt" your crush</h2>
+                    <p id="q1">Are you looking for something to impress your crush!?<br/>So why don't create a website?</p>
+                </div>
+                <div id="pre">
+                    <div id="q2">
+                        <p id="q2_t">Let's take a look!</p>
+                    </div>
+                    <div id="pre_bg">
+                        <div id="preview">
+                            <video id="video" controls>
+                                <source src="./video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <p id="q3">How do you think? Give me your feedback in the contact</p>
+                </div>   
+            </div>
+            <div id="info_p">
+                <div id="info_bg">
+                    <p id="q4">So, let's create your own website<br/>by entering your and your crush information in the form bellow:</p>
+                    <form method="POST" action="input_data.php" id="form">
+                        <div class="divide">
+                            <label for="fname1" class="label">Your fullname:</label>
+                            <input type="text" class="input" id="fname1" name="fname1" required>
+                        </div>
+                        <div class="divide">
+                            <label for="fname2" class="label">Your crush's fullname:</label>
+                            <input type="text" class="input" id="fname2" name="fname2" required>
+                        </div>
+                        <div class="divide">
+                            <label for="birthday" class="label">Your crush's date of birth:</label>
+                            <input type="date" class="input" id="birthday" name="birthday" required>
+                        </div>
+                        <div class="divide">
+                            <label for="massage" class="label">Your massage:</label>
+                            <textarea class="input" id="massage" name="massage" placeholder="No need to fill if you don't want"></textarea>
+                        </div>
+                        <div class="divide" id="button">
+                            <button id="submit" type="submit">Submit!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="contact_p">
+                <div id="fanpage">
+                    <iframe id="fan_cont" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fplanxdev%2F&tabs=timeline&width=360&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="360" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div id="contact_t">
+                    <p id="c1">Contact</p>
+                    <p id="c2">Fanpage:</p>
+                    <a id="c2_i" href="https://www.facebook.com/planxdev" target="_blank">Facebook: fb.com/planxdev</a>
+                    <p id="c3">Email: PlanX.Corporation@gmail.com</p>
+                    <p id="c4">Founder:</p>
+                    <p id="c5">Hieu Nicholas</p>
+                    <a id="c6" href="https://www.facebook.com/profile.php?id=100011449542880" target="_blank">- Facebook: fb.com/profile.php?id=100011449542880</a>
+                    <p id="c7">- Email: nicholash310703@gmail.com</p>
+                    <p id="c8">Developer:</p>
+                    <p id="c9">Nguyen Quoc Viet</p>
+                    <a id="c10" href="https://www.facebook.com/nguyenviet3057" target="_blank">- Facebook: fb.com/nguyenviet3057</a>
+                    <p id="c11">- Email: nguyenviet3057@gmail.com</p>
+                </div>
+            </div>
+            <div id="support_p">
+                <p id="sp_content">We will update support link soon. Thanks</p>
+            </div>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</html>
